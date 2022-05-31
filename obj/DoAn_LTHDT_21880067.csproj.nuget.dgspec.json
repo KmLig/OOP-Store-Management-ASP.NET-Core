@@ -1,0 +1,272 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\CN-CNTT-FS\\HK2\\LTHDT\\DoAn_LTHDT_2022\\DoAn_LTHDT_21880067\\DoAn_LTHDT_21880067.csproj": {}
+  },
+  "projects": {
+    "D:\\CN-CNTT-FS\\HK2\\LTHDT\\DoAn_LTHDT_2022\\DAL\\DAL.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\CN-CNTT-FS\\HK2\\LTHDT\\DoAn_LTHDT_2022\\DAL\\DAL.csproj",
+        "projectName": "DAL",
+        "projectPath": "D:\\CN-CNTT-FS\\HK2\\LTHDT\\DoAn_LTHDT_2022\\DAL\\DAL.csproj",
+        "packagesPath": "C:\\Users\\WINDOW\\.nuget\\packages\\",
+        "outputPath": "D:\\CN-CNTT-FS\\HK2\\LTHDT\\DoAn_LTHDT_2022\\DAL\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\WINDOW\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "D:\\CN-CNTT-FS\\HK2\\LTHDT\\DoAn_LTHDT_2022\\Entities\\Entities.csproj": {
+                "projectPath": "D:\\CN-CNTT-FS\\HK2\\LTHDT\\DoAn_LTHDT_2022\\Entities\\Entities.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\CN-CNTT-FS\\HK2\\LTHDT\\DoAn_LTHDT_2022\\DoAn_LTHDT_21880067\\DoAn_LTHDT_21880067.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\CN-CNTT-FS\\HK2\\LTHDT\\DoAn_LTHDT_2022\\DoAn_LTHDT_21880067\\DoAn_LTHDT_21880067.csproj",
+        "projectName": "DoAn_LTHDT_21880067",
+        "projectPath": "D:\\CN-CNTT-FS\\HK2\\LTHDT\\DoAn_LTHDT_2022\\DoAn_LTHDT_21880067\\DoAn_LTHDT_21880067.csproj",
+        "packagesPath": "C:\\Users\\WINDOW\\.nuget\\packages\\",
+        "outputPath": "D:\\CN-CNTT-FS\\HK2\\LTHDT\\DoAn_LTHDT_2022\\DoAn_LTHDT_21880067\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\WINDOW\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "D:\\CN-CNTT-FS\\HK2\\LTHDT\\DoAn_LTHDT_2022\\DAL\\DAL.csproj": {
+                "projectPath": "D:\\CN-CNTT-FS\\HK2\\LTHDT\\DoAn_LTHDT_2022\\DAL\\DAL.csproj"
+              },
+              "D:\\CN-CNTT-FS\\HK2\\LTHDT\\DoAn_LTHDT_2022\\Entities\\Entities.csproj": {
+                "projectPath": "D:\\CN-CNTT-FS\\HK2\\LTHDT\\DoAn_LTHDT_2022\\Entities\\Entities.csproj"
+              },
+              "D:\\CN-CNTT-FS\\HK2\\LTHDT\\DoAn_LTHDT_2022\\Services\\Services.csproj": {
+                "projectPath": "D:\\CN-CNTT-FS\\HK2\\LTHDT\\DoAn_LTHDT_2022\\Services\\Services.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\CN-CNTT-FS\\HK2\\LTHDT\\DoAn_LTHDT_2022\\Entities\\Entities.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\CN-CNTT-FS\\HK2\\LTHDT\\DoAn_LTHDT_2022\\Entities\\Entities.csproj",
+        "projectName": "Entities",
+        "projectPath": "D:\\CN-CNTT-FS\\HK2\\LTHDT\\DoAn_LTHDT_2022\\Entities\\Entities.csproj",
+        "packagesPath": "C:\\Users\\WINDOW\\.nuget\\packages\\",
+        "outputPath": "D:\\CN-CNTT-FS\\HK2\\LTHDT\\DoAn_LTHDT_2022\\Entities\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\WINDOW\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\CN-CNTT-FS\\HK2\\LTHDT\\DoAn_LTHDT_2022\\Services\\Services.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\CN-CNTT-FS\\HK2\\LTHDT\\DoAn_LTHDT_2022\\Services\\Services.csproj",
+        "projectName": "Services",
+        "projectPath": "D:\\CN-CNTT-FS\\HK2\\LTHDT\\DoAn_LTHDT_2022\\Services\\Services.csproj",
+        "packagesPath": "C:\\Users\\WINDOW\\.nuget\\packages\\",
+        "outputPath": "D:\\CN-CNTT-FS\\HK2\\LTHDT\\DoAn_LTHDT_2022\\Services\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\WINDOW\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "D:\\CN-CNTT-FS\\HK2\\LTHDT\\DoAn_LTHDT_2022\\DAL\\DAL.csproj": {
+                "projectPath": "D:\\CN-CNTT-FS\\HK2\\LTHDT\\DoAn_LTHDT_2022\\DAL\\DAL.csproj"
+              },
+              "D:\\CN-CNTT-FS\\HK2\\LTHDT\\DoAn_LTHDT_2022\\Entities\\Entities.csproj": {
+                "projectPath": "D:\\CN-CNTT-FS\\HK2\\LTHDT\\DoAn_LTHDT_2022\\Entities\\Entities.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

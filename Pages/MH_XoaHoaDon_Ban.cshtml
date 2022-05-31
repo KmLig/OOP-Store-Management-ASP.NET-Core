@@ -1,0 +1,14 @@
+﻿@page
+@model DoAn_LTHDT_21880067.Pages.MH_XoaHoaDon_BanModel
+@{
+}
+@if (@Model.hd != null)
+{   
+<div>Ban co muon xoa hoa don @Model.hd.MaHD ?</div>
+<form method="post" > 
+  <input type="submit" class="btn btn-primary" value="Xóa">
+</form> 
+}
+<div class="text-danger mt-2">
+@Model.Chuoi
+</div>

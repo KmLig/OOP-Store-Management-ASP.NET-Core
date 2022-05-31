@@ -1,0 +1,110 @@
+﻿@page
+@model DoAn_LTHDT_21880067.Pages.MH_SuaHoaDon_BanModel
+@{
+}
+<div class="container">
+    <h1>Sửa hóa đơn Bán hàng</h1>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class=" border bg-light rounded p-3">
+            <form method="post" id="frmSelecMaMatHang">
+                <table class="table table-dark table-striped table-hover mt-4 text-center" id="displayTable">
+                    <tr>
+                        <th class="col-1">STT</th>
+                        <th class="col-7">Mã mặt hàng</th>
+                        <th class="col-2">Số lượng</th>
+                        <th class="col-2">Giá</th>
+                    </tr>
+                    
+                        <tr>
+                            <td>
+                            <div class="form-group">
+                                    <label for="STT">STT</label><br>
+                                    <input type="number" class="form-control text-center" name="STT" value="1" disabled>
+                                </div>
+                        </td>
+                        <td>
+                            <div class="form-group">
+                                <label for="bienA">Nhập mã mặt hàng:</label><br>
+                                <select name="MatHangHoaDon" id="MatHangHoaDon" class="form-control" onchange="getMatHang(this.value)">
+                                    @{
+                                        <option value="" selected disabled hidden>Chọn Mã mặt hàng cần tìm ---</option>                                        
+                                        foreach (var mh in @Model.dsMatHang)
+                                        {
+                                        <option value="@mh.MaMH|@mh.TenMH">@mh.MaMH | @mh.TenMH | Giá tham chiếu @mh.Gia</option>
+                                        }
+                                    }
+                                </select>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="form-group">
+                                <label for="bienB">Nhập số lượng:</label><br>
+                                <input type="number" class="form-control" name="SL" value="@Model.A.SanPham.SL" onchange="TinhTien();">
+                            </div>
+                        </td>
+                        <td>
+                            <div class="form-group">
+                                <label for="bienB">Giá bán:</label><br>
+                                <input type="number" class="form-control" name="Gia" value="@Model.A.SanPham.Gia" onchange="TinhTien();">
+                            </div>
+                        </td>
+
+                    </tr>    
+                    
+                    
+                    <tr>
+                        <td colspan="2">
+                            <div class="form-group">
+                                <label for="bienA">Mã Hóa đơn đang sửa:</label><br>
+                                <input type="text" class="form-control" name="MaHD" value="@Model.A.MaHD" disabled>
+                            </div>
+                        </td>                                              
+                        <td>
+                            <div class="form-group">
+                                <label for="bienB">Ngày lập hóa đơn:</label><br>
+                                <input type="date" class="form-control" name="NgayLap" value="@DateTime.Now.ToString("yyyy-MM-dd")">
+                            </div>
+                        </td>
+                        <td>
+                            <div class="form-group">
+                                <label for="bienB">Thành tiền:</label><br>                                
+                                <input type="text" id="ThanhTien" class="form-control" name="ThanhTien" value="@Model.A.ThanhTien" disabled>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+                <br />
+                <div class="form-group">
+                    <input type="submit" class="form-control btn btn-warning mb-2" value="Lưu"><br />
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div class="text-danger">
+    <b>@Model.Chuoi</b>
+</div>
+
+<script>
+    let i = 1;  
+    
+    function TinhTien(){
+        const sl = document.getElementsByName('SL');    
+        const gia = document.getElementsByName('Gia');
+        
+        let s = 0;
+        
+        for(let k = 0; k < i; k++){
+            let SoLuong = parseInt(sl[k].value);
+            let Gia = parseInt(gia[k].value);          
+            s += SoLuong*Gia;
+            console.log(s);
+        }        
+        let thanhTien = document.getElementById('ThanhTien');
+        thanhTien.value = s;
+    }
+</script>

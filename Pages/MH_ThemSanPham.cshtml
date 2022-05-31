@@ -1,0 +1,56 @@
+﻿@page
+@model DoAn_LTHDT_21880067.Pages.MH_ThemSanPhamModel
+@{
+}
+
+<div class="container">
+    <div class="row">
+        <div class="col-3 border bg-light rounded p-3">
+            <form method="post">
+                <div class="form-group">
+                    <label for="bienA">Nhập mã mặt hàng:</label><br>
+                    <input type="text" class="form-control" name="MaMH" value="">
+                </div>
+                <div class="form-group">
+                    <label for="bienB">Nhập tên mặt hàng:</label><br>
+                    <input type="text" class="form-control" name="TenMH" value="">
+                </div>
+                <div class="form-group">
+                    <label for="bienB">Hạn sử dụng:</label><br>
+                    <input type="date" class="form-control" name="HanSD" value="">
+                </div>
+                <div class="form-group">
+                    <label for="bienB">Công ty sản xuất:</label><br>
+                    <input type="text" class="form-control" name="CtySX" value="">
+                </div>
+                <div class="form-group">
+                    <label for="bienB">Ngày sản xuất:</label><br>
+                    <input type="date" class="form-control" name="NgaySX" value="">
+                </div>
+                <div class="form-group">
+                    <label for="bienB">Loại hàng:</label><br>
+                    <select name="LoaiHang" id="LoaiHang" class="form-control">
+                        @{for(int i = 0; i < @Model.dsLoaiHang.Count; i++)
+                            {
+                                <option value="@Model.dsLoaiHang[i]">@Model.dsLoaiHang[i]</option>
+                            }
+                        }   
+                    </select> 
+                    
+                </div>
+                <div class="form-group">
+                    <label for="bienB">Nhập giá:</label><br>
+                    <input type="text" class="form-control" name="Gia" value="">
+                </div>
+                <br />
+                <div class="form-group">
+                    <input type="submit" class="form-control btn btn-warning mb-2" value="Lưu"><br />
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div class="text-danger">
+<b>@Model.Chuoi</b>
+</div>

@@ -1,0 +1,14 @@
+﻿@page
+@model DoAn_LTHDT_21880067.Pages.MH_XoaLoaiHangModel
+@{
+}
+@if (@Model.coLoaiHang)
+{   
+<div>Ban co muon xoa san pham @Model.LoaiHang ?</div>
+<form method="post" > 
+  <input type="submit" class="btn btn-primary" value="Xoa">
+</form> 
+}
+<div class="text-danger mt-2">
+    <b>@Model.Chuoi</b>
+</div>

@@ -1,0 +1,112 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = DoAn_LTHDT_21880067
+build_property.RootNamespace = DoAn_LTHDT_21880067
+build_property.ProjectDir = D:\CN-CNTT-FS\HK2\LTHDT\DoAn_LTHDT_2022\DoAn_LTHDT_21880067\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = D:\CN-CNTT-FS\HK2\LTHDT\DoAn_LTHDT_2022\DoAn_LTHDT_21880067
+build_property._RazorSourceGeneratorDebug = 
+
+[D:/CN-CNTT-FS/HK2/LTHDT/DoAn_LTHDT_2022/DoAn_LTHDT_21880067/Pages/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/CN-CNTT-FS/HK2/LTHDT/DoAn_LTHDT_2022/DoAn_LTHDT_21880067/Pages/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/CN-CNTT-FS/HK2/LTHDT/DoAn_LTHDT_2022/DoAn_LTHDT_21880067/Pages/MH_HoaDonBanHang.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTUhfSG9hRG9uQmFuSGFuZy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/CN-CNTT-FS/HK2/LTHDT/DoAn_LTHDT_2022/DoAn_LTHDT_21880067/Pages/MH_HoaDonNhapHang.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTUhfSG9hRG9uTmhhcEhhbmcuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/CN-CNTT-FS/HK2/LTHDT/DoAn_LTHDT_2022/DoAn_LTHDT_21880067/Pages/MH_LoaiHang.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTUhfTG9haUhhbmcuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/CN-CNTT-FS/HK2/LTHDT/DoAn_LTHDT_2022/DoAn_LTHDT_21880067/Pages/MH_MatHang.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTUhfTWF0SGFuZy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/CN-CNTT-FS/HK2/LTHDT/DoAn_LTHDT_2022/DoAn_LTHDT_21880067/Pages/MH_SuaHoaDon_Ban.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTUhfU3VhSG9hRG9uX0Jhbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/CN-CNTT-FS/HK2/LTHDT/DoAn_LTHDT_2022/DoAn_LTHDT_21880067/Pages/MH_SuaLoaiHang.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTUhfU3VhTG9haUhhbmcuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/CN-CNTT-FS/HK2/LTHDT/DoAn_LTHDT_2022/DoAn_LTHDT_21880067/Pages/MH_SuaSanPham.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTUhfU3VhU2FuUGhhbS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/CN-CNTT-FS/HK2/LTHDT/DoAn_LTHDT_2022/DoAn_LTHDT_21880067/Pages/MH_Tao_HoaDon_BanHang.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTUhfVGFvX0hvYURvbl9CYW5IYW5nLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/CN-CNTT-FS/HK2/LTHDT/DoAn_LTHDT_2022/DoAn_LTHDT_21880067/Pages/MH_Tao_HoaDon_NhapHang.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTUhfVGFvX0hvYURvbl9OaGFwSGFuZy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/CN-CNTT-FS/HK2/LTHDT/DoAn_LTHDT_2022/DoAn_LTHDT_21880067/Pages/MH_ThemLoaiHang.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTUhfVGhlbUxvYWlIYW5nLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/CN-CNTT-FS/HK2/LTHDT/DoAn_LTHDT_2022/DoAn_LTHDT_21880067/Pages/MH_ThemSanPham.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTUhfVGhlbVNhblBoYW0uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/CN-CNTT-FS/HK2/LTHDT/DoAn_LTHDT_2022/DoAn_LTHDT_21880067/Pages/MH_ThongKe_HetHan.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTUhfVGhvbmdLZV9IZXRIYW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/CN-CNTT-FS/HK2/LTHDT/DoAn_LTHDT_2022/DoAn_LTHDT_21880067/Pages/MH_ThongKe_TonKho.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTUhfVGhvbmdLZV9Ub25LaG8uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/CN-CNTT-FS/HK2/LTHDT/DoAn_LTHDT_2022/DoAn_LTHDT_21880067/Pages/MH_XoaHoaDon_Ban.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTUhfWG9hSG9hRG9uX0Jhbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/CN-CNTT-FS/HK2/LTHDT/DoAn_LTHDT_2022/DoAn_LTHDT_21880067/Pages/MH_XoaHoaDon_Nhap.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTUhfWG9hSG9hRG9uX05oYXAuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/CN-CNTT-FS/HK2/LTHDT/DoAn_LTHDT_2022/DoAn_LTHDT_21880067/Pages/MH_XoaLoaiHang.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTUhfWG9hTG9haUhhbmcuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/CN-CNTT-FS/HK2/LTHDT/DoAn_LTHDT_2022/DoAn_LTHDT_21880067/Pages/MH_XoaSanPham.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTUhfWG9hU2FuUGhhbS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/CN-CNTT-FS/HK2/LTHDT/DoAn_LTHDT_2022/DoAn_LTHDT_21880067/Pages/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpdmFjeS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/CN-CNTT-FS/HK2/LTHDT/DoAn_LTHDT_2022/DoAn_LTHDT_21880067/Pages/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/CN-CNTT-FS/HK2/LTHDT/DoAn_LTHDT_2022/DoAn_LTHDT_21880067/Pages/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/CN-CNTT-FS/HK2/LTHDT/DoAn_LTHDT_2022/DoAn_LTHDT_21880067/Pages/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/CN-CNTT-FS/HK2/LTHDT/DoAn_LTHDT_2022/DoAn_LTHDT_21880067/Pages/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-14vamwe846

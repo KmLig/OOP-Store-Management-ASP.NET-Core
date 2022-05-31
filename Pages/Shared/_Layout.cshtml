@@ -1,0 +1,99 @@
+﻿@using Microsoft.AspNetCore.Http;
+@{
+    string username = Context.Session.GetString("user");
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - DoAn_LTHDT_21880067</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/DoAn_LTHDT_21880067.styles.css" asp-append-version="true" />
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+            <div class="container">
+                <a class="navbar-brand" asp-area="" asp-page="/Index"><b><i class="fa fa-bar-chart"></i> Store Management App</b></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                    <ul class="navbar-nav flex-grow-1">
+                        <li class="nav-item">
+                            <a class="nav-link text-dark btn btn-dark text-white me-md-2 rounded-pill" asp-area="" asp-page="/Index"><i class="fa fa-home"></i> Home</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link btn btn-outline-warning me-md-2 rounded-pill" asp-area="" asp-page="/MH_LoaiHang">Loại hàng</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link btn btn-outline-warning me-md-2 rounded-pill" asp-area="" asp-page="/MH_MatHang">Mặt hàng</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link btn btn-outline-warning me-md-2 rounded-pill" asp-area="" asp-page="/MH_HoaDonNhapHang">Hóa đơn nhập</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link btn btn-outline-warning me-md-2 rounded-pill" asp-area="" asp-page="/MH_HoaDonBanHang">Hóa đơn bán</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link btn btn-outline-warning me-md-2 rounded-pill" asp-area="" asp-page="/MH_ThongKe_TonKho">Thống kê tồn kho</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link btn btn-outline-warning me-md-2 rounded-pill" asp-area="" asp-page="/MH_ThongKe_HetHan">Thống kê hết hạn</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+                @if (string.IsNullOrEmpty(username))
+                {
+                    <div>
+                        <a class="nav-link text-dark btn btn-info text-black mb-3" asp-area="" asp-page="/MH_DangNhap"><i class="fa fa-sign-in"></i> Login</a>
+                        <a class="nav-link text-dark btn btn-info text-black" asp-area="" asp-page="/MH_DangKy"><i class='fa fa-pencil-square'></i> Register</a>                    
+                    </div>
+                }
+                else
+                {
+                    <div>
+                        <div class="bg-primary text-white rounded p-3"><b>User: @username <i class="fa fa-check-circle"></i></b></div>
+                        <a class="nav-link text-dark btn btn-info text-black mt-3" asp-area="" asp-page="/MH_LogOut"><i class="fa fa-sign-out"></i> Logout</a>                    
+                    </div>
+                }
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="border-top footer text-muted">
+        <div class="container">
+            &copy; 2022 - DoAn_LTHDT_21880067 - Pham Xuan Khiem - <a asp-area="" asp-page="/Privacy">Privacy</a>
+        </div>
+    </footer>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+<script>
+    //set navbar item as active when user selects it
+    $(document).ready(function () {            
+            var url = window.location;
+            $('.navbar-nav .nav-item').find('.active').removeClass('active');
+            $('.navbar-nav li a').each(function () {
+                if (this.href == url) {
+                    $(this).addClass('active');
+                }
+            }); 
+     });
+</script>
+</html>

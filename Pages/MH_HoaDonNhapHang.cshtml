@@ -1,0 +1,58 @@
+﻿@page
+@model DoAn_LTHDT_21880067.Pages.MH_HoaDonNhapHangModel
+@{
+}
+
+<div class="container mb-3">
+    <div class="row">
+        <div class="col-8">
+            <h1 class="">Hóa đơn Nhập hàng <a href="/MH_Tao_HoaDon_NhapHang" class="btn btn-warning text-dark"><b>Thêm Hóa đơn mới +</b></a></h1>
+
+        </div>
+        <div class="col-4">
+            <form method="post">
+                <div class="form-group">
+                    <input type="text" class="form-control" name="tuKhoa" value="" placeholder="Nhập từ khóa">
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="form-control btn btn-dark mt-2" value="">Tìm kiếm <i class="fa fa-search"></i></button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+<table class="table table-dark table-striped table-hover mt-4 text-center">
+    <tr>       
+        <th class=col->STT</th>
+        <th class="col-">Mã Hóa đơn</th>        
+        <th class="col-">Mã Mặt hàng</th>        
+        <th class="col-">Tên Mặt hàng</th>        
+        <th class="col-">Giá bán</th>
+        <th class="col-">Số lượng</th>
+        <th class="col-">Ngày lập</th>
+        <th class="col-">Thành tiền</th>
+        <th>Thao tác</th>
+
+    </tr>
+    @for(int i = 0; i < @Model.dsHoaDon.Count; i++)
+    {
+        int j = i + 1;
+        <tr> 
+            <td>@j</td>
+            <td>@Model.dsHoaDon[i].MaHD</td>
+            <td>@Model.dsHoaDon[i].SanPham.MaMH</td>
+            <td>@Model.dsHoaDon[i].SanPham.TenMH</td>
+            <td>@Model.dsHoaDon[i].SanPham.Gia</td>
+            <td>@Model.dsHoaDon[i].SanPham.SL</td>
+            <td>@Model.dsHoaDon[i].NgayLap.ToShortDateString() </td>
+            <td>@Model.dsHoaDon[i].ThanhTien </td>
+
+            <td>
+                <a href="/MH_XoaHoaDon_Nhap?index=@Model.dsHoaDon[i].MaHD" class="btn btn-danger">Xóa</a>
+                <a href="/MH_SuaHoaDon_Nhap?index=@Model.dsHoaDon[i].MaHD" class="btn btn-primary">Sửa</a>
+            </td>
+        </tr>
+    }
+</table>

@@ -1,0 +1,24 @@
+﻿@page
+@model DoAn_LTHDT_21880067.Pages.MH_ThemLoaiHangModel
+@{
+}
+<div class="container">
+    <div class="row">
+        <div class="col-3 border rounded p-3">
+            <form method="post">                
+                <div class="form-group">
+                    <label for="bienB">Loại hàng:</label><br>
+                    <input type="text" class="form-control" name="LoaiHang" value="@Model.LoaiHang">
+                </div>                
+                <br />
+                <div class="form-group">
+                    <input type="submit" class="form-control btn btn-warning mb-2" value="Lưu"><br />
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div class="text-danger">
+<b>@Model.Chuoi</b>
+</div>

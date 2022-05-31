@@ -1,0 +1,31 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "5f190999-df12-4e22-9729-904c0ae139d9": {
+      "ProjectGuid": "5f190999-df12-4e22-9729-904c0ae139d9",
+      "DisplayName": "Entities",
+      "ColorIndex": 0
+    },
+    "39a6e4e3-7896-4721-91eb-508ae7751803": {
+      "ProjectGuid": "39a6e4e3-7896-4721-91eb-508ae7751803",
+      "DisplayName": "Services",
+      "ColorIndex": 1
+    },
+    "10f59dfa-8376-4bf5-9bb1-56691927d3c5": {
+      "ProjectGuid": "10f59dfa-8376-4bf5-9bb1-56691927d3c5",
+      "DisplayName": "DAL",
+      "ColorIndex": 2
+    },
+    "37e6453b-036a-4df6-be18-1e92f59d532f": {
+      "ProjectGuid": "37e6453b-036a-4df6-be18-1e92f59d532f",
+      "DisplayName": "DoAn_LTHDT_21880067",
+      "ColorIndex": 3
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Miscellaneous Files",
+      "ColorIndex": -1
+    }
+  },
+  "NextColorIndex": 4
+}
