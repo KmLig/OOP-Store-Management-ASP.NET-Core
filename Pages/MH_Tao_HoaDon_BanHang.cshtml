@@ -86,6 +86,7 @@
 <div class="text-danger">
     <b>@Model.Chuoi</b>
 </div>
+
 <script>
     let i = 1;  
     
@@ -104,4 +105,49 @@
         let thanhTien = document.getElementById('ThanhTien');
         thanhTien.value = s;
     }
+    
+    
+    function AddRow() {
+        let table = document.getElementById("displayTable");
+        i++;
+        let row = table.insertRow(i);
+        cell0 = row.insertCell(0);
+        cell0.innerHTML = `<td>                            
+                                <div class="form-group">
+                                    <label for="STT">STT:</label><br>
+                                    <input type="number" class="form-control text-center" name="STT" value="${i}" disabled>
+                                </div>
+                            </td>`
+        cell1 = row.insertCell(1);
+        cell1.innerHTML =  `<td>
+                            <div class="form-group">
+                                <label for="bienA">Nhập mã mặt hàng:</label><br>
+                                <select name="MatHangHoaDon" id="MatHangHoaDon" class="form-control" onchange="getMatHang(this.value)">
+                                    @{
+                                        <option value="" selected disabled hidden>Chọn Mã mặt hàng cần tìm ---</option>                                        
+                                        foreach (var mh in @Model.dsMatHang)
+                                        {
+                                            <option value="@mh.MaMH|@mh.TenMH">@mh.MaMH | @mh.TenMH | Giá tham chiếu @mh.Gia</option>
+                                        }
+                                    }
+                                </select>
+                            </div>
+                        </td>`
+        cell2 = row.insertCell(2);
+        cell2.innerHTML = `<td>
+                            <div class="form-group">
+                                <label for="bienB">Nhập số lượng:</label><br>
+                                <input type="number" id="SL" class="form-control" name="SL" value="" oninput="getSL(this.value)" onchange="TinhTien();">
+                            </div>
+                        </td>`
+        cell3 = row.insertCell(3);
+        cell3.innerHTML = `<td>
+                            <div class="form-group">
+                                <label for="bienB">Giá nhập:</label><br>
+                                <input type="number" id="Gia" class="form-control" name="Gia" value="" oninput="getGia(this.value)" onchange="TinhTien();">
+                            </div>
+                        </td>`
+    }
+
+
 </script>

@@ -9,7 +9,7 @@ namespace DoAn_LTHDT_21880067.Pages
     public class MH_SuaHoaDon_BanModel : PageModel
     {
         public HoaDon A;
-        public MatHangHoaDon mh { get; set; }
+        public List <MatHangHoaDon> mh { get; set; }
         public string? Chuoi;
         public bool coHoaDon;
         public List<MatHang> dsMatHang { get; set; }
@@ -59,13 +59,25 @@ namespace DoAn_LTHDT_21880067.Pages
             A = hdd.Data;
 
             dsMatHang = luuTruSanPham.DocDanhSachSanPham();
-            string[] Ma_TenMH = MatHangHoaDon.Split('|');
-            mh = new MatHangHoaDon(Ma_TenMH[0], Ma_TenMH[1], Gia, SL);
-            int thanhTien = SL * Gia;
+
+
+            mh = new List<MatHangHoaDon>();
+            int nMucNhap = Request.Form["MatHangHoaDon"].Count;
+            for (int i = 0; i < nMucNhap; i++)
+            {
+                string[] Ma_TenMH = Request.Form["MatHangHoaDon"][i].Split('|');
+                string MaMH_CT = Ma_TenMH[0];
+                string TenMH_CT = Ma_TenMH[1];
+                int sl_ct = int.Parse(Request.Form["SL"][i]);
+                int gia_ct = int.Parse(Request.Form["Gia"][i]);
+                MatHangHoaDon Sp = new MatHangHoaDon(MaMH_CT, TenMH_CT, gia_ct, sl_ct);
+                ThanhTien += Sp.SL * Sp.Gia;
+                mh.Add(Sp);
+            }
 
             try
             {
-                A = new HoaDon(Index, mh, NgayLap, thanhTien);
+                A = new HoaDon(Index, mh, NgayLap, ThanhTien);
                 var kq = xuLyHoaDonBanhang.SuaHoaDon(A);
                 if (kq.IsSuccess)
                 {

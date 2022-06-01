@@ -42,10 +42,42 @@
         <tr> 
             <td>@j</td>
             <td>@Model.dsHoaDon[i].MaHD</td>
-            <td>@Model.dsHoaDon[i].SanPham.MaMH</td>
-            <td>@Model.dsHoaDon[i].SanPham.TenMH</td>
-            <td>@Model.dsHoaDon[i].SanPham.Gia</td>
-            <td>@Model.dsHoaDon[i].SanPham.SL</td>
+            
+                <td>
+                    @for(int k = 0; k < @Model.dsHoaDon[i].dsSanPham.Count; k++)
+                    {
+                    @Model.dsHoaDon[i].dsSanPham[k].MaMH 
+                    <br \>
+                     }
+                </td>
+           
+            
+                <td>
+                    @for(int k = 0; k < @Model.dsHoaDon[i].dsSanPham.Count; k++)
+                    {
+                    @Model.dsHoaDon[i].dsSanPham[k].TenMH 
+                    <br \>
+                    }
+                </td>
+            
+           
+                <td>
+                     @for(int k = 0; k < @Model.dsHoaDon[i].dsSanPham.Count; k++)
+                    {
+                    @Model.dsHoaDon[i].dsSanPham[k].Gia 
+                    <br \>
+                    }
+                </td>
+            
+            
+                <td>
+                    @for(int k = 0; k < @Model.dsHoaDon[i].dsSanPham.Count; k++)
+                     {
+                    @Model.dsHoaDon[i].dsSanPham[k].SL 
+                    <br \>
+                     }
+                </td>
+                       
             <td>@Model.dsHoaDon[i].NgayLap.ToShortDateString() </td>
             <td>@Model.dsHoaDon[i].ThanhTien </td>
 

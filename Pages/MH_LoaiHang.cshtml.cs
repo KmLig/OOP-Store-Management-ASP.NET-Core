@@ -27,6 +27,7 @@ namespace DoAn_LTHDT_21880067.Pages
         public void OnPost()
         {
             dsLoaiHang = xuLyLoaiHang.TimKiemLoaiHang(TuKhoa);
+            dsSanPham = luuTruSanPham.DocDanhSachSanPham();
             countMH = xuLyLoaiHang.DemSoLuongMatHang(dsLoaiHang, dsSanPham);
         }
         public MH_LoaiHangModel()

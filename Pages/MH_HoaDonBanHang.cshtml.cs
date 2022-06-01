@@ -8,7 +8,7 @@ namespace DoAn_LTHDT_21880067.Pages
 {
     public class MH_HoaDonBanHangModel : PageModel
     {
-        public List<HoaDon> dsHoaDon { get; set; }        
+        public List<HoaDon> dsHoaDon { get; set; }
         [BindProperty]
         public string TuKhoa { get; set; }
         public IXL_HoaDonBanHang xuLyHoaDonBanHang;

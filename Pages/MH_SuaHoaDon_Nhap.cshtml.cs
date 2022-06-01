@@ -1,42 +1,66 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Entities;
-using DAL;
 using Services;
+using DAL;
 
 namespace DoAn_LTHDT_21880067.Pages
 {
-    public class MH_Tao_HoaDon_BanHangModel : PageModel
+    public class MH_SuaHoaDon_NhapModel : PageModel
     {
         public HoaDon A;
-        public string Chuoi;
-        public List<MatHang> dsMatHang;
-        public List<MatHangHoaDon> mh { get; set; }
-        [BindProperty]
-        public string MaHD { get; set; }
+        public List <MatHangHoaDon> mh { get; set; }
+        public string? Chuoi;
+        public bool coHoaDon;
+        public List<MatHang> dsMatHang { get; set; }
+        [BindProperty(SupportsGet = true)]
+        public string Index { get; set; }       
         [BindProperty]
         public string MatHangHoaDon { get; set; }
         [BindProperty]
         public int Gia { get; set; }
         [BindProperty]
         public int SL { get; set; }
-
         [BindProperty]
         public DateTime NgayLap { get; set; }
         [BindProperty]
         public int ThanhTien { get; set; }
-
+        
         private ILuuTruSanPham luuTruSanPham;
-        private IXL_HoaDonBanHang xuLyHoaDonBanhang;
-
+        private IXL_HoaDonNhapHang xuLyHoaDonNhaphang;
         public void OnGet()
         {
+            var HD = xuLyHoaDonNhaphang.DocHoaDon(Index);
             dsMatHang = luuTruSanPham.DocDanhSachSanPham();
-            Chuoi = string.Empty;
+
+            if (string.IsNullOrEmpty(Index))
+            {
+                Chuoi = "Ma hoa don khong hop le";
+            }
+            else
+            {
+                var kq = xuLyHoaDonNhaphang.DocHoaDon(Index);
+                if (kq.IsSuccess)
+                {
+                    A = kq.Data;
+                }
+                else
+                {
+                    A = null;
+                    Chuoi = kq.ErrorMessage;
+                }
+            }
+
+
         }
         public void OnPost()
         {
+            var hdd = xuLyHoaDonNhaphang.DocHoaDon(Index);
+            A = hdd.Data;
+
             dsMatHang = luuTruSanPham.DocDanhSachSanPham();
+
+
             mh = new List<MatHangHoaDon>();
             int nMucNhap = Request.Form["MatHangHoaDon"].Count;
             for (int i = 0; i < nMucNhap; i++)
@@ -51,16 +75,14 @@ namespace DoAn_LTHDT_21880067.Pages
                 mh.Add(Sp);
             }
 
-
-
             try
             {
-                A = new HoaDon(MaHD, mh, NgayLap, ThanhTien);
-                var kq = xuLyHoaDonBanhang.ThemHoaDon(A);
+                A = new HoaDon(Index, mh, NgayLap, ThanhTien);
+                var kq = xuLyHoaDonNhaphang.SuaHoaDon(A);
                 if (kq.IsSuccess)
                 {
                     Chuoi = "Luu tru thanh cong";
-                    Response.Redirect("/MH_HoaDonBanHang");
+                    Response.Redirect("/MH_HoaDonNhapHang");
                 }
                 else
                 {
@@ -73,10 +95,10 @@ namespace DoAn_LTHDT_21880067.Pages
             }
 
         }
-        public MH_Tao_HoaDon_BanHangModel()
-        {
+        public MH_SuaHoaDon_NhapModel()        {
+
             luuTruSanPham = new LuuTruSanPham();
-            xuLyHoaDonBanhang = new XL_HoaDonBanHang();
+            xuLyHoaDonNhaphang = new XL_HoaDonNhapHang();
         }
     }
-}
+    }
